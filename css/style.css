@@ -117,8 +117,8 @@ body {
 
 .main_box {
   background-color: #eeeeee;
-  padding: 40rem 15rem;
-  margin-top: -25rem; }
+  padding: 25rem 15rem;
+  margin-top: -15rem; }
   .main_box .main_tittle {
     text-align: center; }
     .main_box .main_tittle h2 {
@@ -136,7 +136,7 @@ body {
   .main_box .main_both {
     margin-top: 8rem;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem; }
     .main_box .main_both .main_left h3 {
       color: #777;
@@ -146,7 +146,7 @@ body {
       letter-spacing: .3px; }
     .main_box .main_both .main_left p {
       color: #777;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 2.5rem;
       margin: 1.5rem 0;
       letter-spacing: 1px; }
@@ -189,3 +189,41 @@ body {
         top: 10rem; }
       .main_box .main_both .main_right:hover img:not(:hover) {
         transform: scale(0.95); }
+
+.features {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-position: top;
+  background-size: cover;
+  padding: 20rem 15rem;
+  transform: skewY(-4deg);
+  margin-top: -7rem; }
+  .features > * {
+    transform: skewY(4deg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem; }
+  .features--card {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5rem 3rem;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s; }
+    .features--card:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
+    .features--card i {
+      font-size: 6rem;
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent; }
+    .features--card h4 {
+      color: #777;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 1rem 0; }
+    .features--card p {
+      color: #777;
+      font-size: 1.4rem;
+      line-height: 2.5rem; }

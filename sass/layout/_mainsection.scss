@@ -1,7 +1,7 @@
 .main_box{
     background-color: rgb(238, 238, 238);
-    padding: 40rem 15rem;
-    margin-top: -25rem;
+    padding: 25rem 15rem;
+    margin-top: -15rem;
     .main_tittle{
         text-align: center;
         h2{
@@ -22,19 +22,19 @@
     .main_both{
         margin-top: 8rem;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         gap: 4rem;
         .main_left{
             h3{
                 color: $color-gray;
-                font-size: 1.6rem;
+                font-size: $main-font;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: .3px;
             }
             p{
                 color: $color-gray;
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 line-height: 2.5rem;
                 margin: 1.5rem 0;
                 letter-spacing: 1px;
@@ -43,7 +43,7 @@
                 display: inline-block;
                 margin-top: 1.5rem;
                 text-decoration: none;
-                font-size: 1.6rem;
+                font-size: $main-font;
                 color: $Medium-green;
                 padding: 5px;
                 border-bottom: 2px $color-light-gray solid;
