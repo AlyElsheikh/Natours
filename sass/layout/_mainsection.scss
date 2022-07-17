@@ -1,0 +1,93 @@
+.main_box{
+    background-color: rgb(238, 238, 238);
+    padding: 40rem 15rem;
+    margin-top: -25rem;
+    .main_tittle{
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+            background-image: linear-gradient(to right ,$Light-green ,$Dark-green);
+            display: inline-block;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            transition: all .2s;
+            &:hover{
+                transform: skew(10deg,3deg) scale(1.1);
+            }
+        }
+    }
+    .main_both{
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 4rem;
+        .main_left{
+            h3{
+                color: $color-gray;
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+            }
+            p{
+                color: $color-gray;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                margin: 1.5rem 0;
+                letter-spacing: 1px;
+            }
+            a{
+                display: inline-block;
+                margin-top: 1.5rem;
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: $Medium-green;
+                padding: 5px;
+                border-bottom: 2px $color-light-gray solid;
+                transition: all .2s;
+                &:hover{
+                    background-color: $Medium-green;
+                    color: $color-white;
+                    transform: translateY(-1px);
+                }
+                &:active{
+                    transform: translateY(1px);
+                }
+            }
+        }
+        .main_right{
+            position: relative;
+            img{
+                border-radius: .2rem;
+                width: 55%;
+                position: absolute;
+                z-index: 5;
+                transition: all .2s; 
+                &:hover{
+                    transform: scale(1.1);
+                    outline: 1.2rem $Medium-green solid;
+                    outline-offset: 1.5rem;
+                    z-index: 10;
+                }
+            }
+            .img-1{
+                left: 0;
+                top: -1rem;
+            }
+            .img-2{
+                right: 0rem;
+                top: 2rem;
+            }
+            .img-3{
+                left: 10rem;
+                top: 10rem;
+            }
+            &:hover img:not(:hover){
+                transform: scale(.95);
+            }  
+        }
+    }
+}
